@@ -1,11 +1,11 @@
 import React from 'react';
 import { TodoListItem } from './TodoListItem';
 
-export const TodoList = ({ todos }) => {
+export const TodoList = ({ todos, dispatch }) => {
   return (
     <ul className='list-group list-group-flush'>
       {todos.map((todo, i) => (
-        <TodoListItem key={todo.id} todo={todo} index={i} />
+        <TodoListItem key={todo.id} todo={todo} index={i} dispatch={dispatch} />
       ))}
     </ul>
   );

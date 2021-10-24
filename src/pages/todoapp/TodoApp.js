@@ -30,7 +30,7 @@ export const TodoApp = () => {
 
       <div className='row'>
         <div className='col-7'>
-          <TodoList todos={todos} />
+          <TodoList todos={todos} dispatch={dispatch}/>
         </div>
 
         <div className='col-5'>
